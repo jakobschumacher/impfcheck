@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Impfchecker</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Impfcheck</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Impfcheck</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="text-secondary" href="#"><span class="fa fa-home fa-lg"></span> Teste deinen Impfschutz</a></li>
+        <li><a href="#"><span class="fa fa-info"></span> Über die Seite</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a class="text-secondary" href="#">Teste deinen Impfschutz</a></li>
-      <li><a href="#">Über die Seite</a></li>
-    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <h1>Teste deinen Impfschutz</h1>
+    </div>
+    <div class="row">
+      <p><span class="fa fa-info"></span>
+        Hier kannst du deinen Impfschutz überprüfen. Der Test folgt den Impfempfehlungen der STIKO aus dem Jahr 2017. Der Test vereinfacht die Empfehlungen und kann deshalb Fehler enthalten.
+      </p>
+    </div>
+    <div class="row">
+      <h3>Allgemeine Angaben</h3>
+    </div>
+
+    <div class="row">
+      <h3>Röteln</h3>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <p>
+           Ich arbeite mit Kindern
+
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <p>Ich arbeite mit Kindern</p>
+      </div>
+      <div class="col-sm-4">
+        <p><i class="fa fa-ban fa-lg" style="color:red; font-size:550%;text-shadow:5px 5px 2px #cfcfcf"></i></p>
+      </div>
+    </div>
   </div>
-</nav>
 
-<div class="container">
-  <h3>Navbar Forms</h3>
-  <p>Use the .navbar-form class to vertically align form elements (same padding as links) inside the navbar.</p>
+<footer class="footer">
+  <div class="container">
+<div class="row">
+<a class="btn btn-social-icon btn-google-pls"><i class="fa fa-google-plus"></i></a>
+<a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+<a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+<a class="btn btn-social-icon btn-youtbe"><i class="fa fa-youtube"></i></a>
+><i class="fa fa-envelope-o"></i>
 </div>
+  </div>
 
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>
