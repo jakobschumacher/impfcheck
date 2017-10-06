@@ -1,0 +1,27 @@
+{
+  "name": "Impfcheck",
+  "version": "1.0.0",
+  "description": "This checks you vaccination status",
+  "main": "index.html",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakobschumacher/impfcheck.git"
+  },
+  "keywords": [
+    "vaccination selfcheck"
+  ],
+  "author": "Jakob Schumacher",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/jakobschumacher/impfcheck/issues"
+  },
+  "homepage": "https://github.com/jakobschumacher/impfcheck#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
