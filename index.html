@@ -9,217 +9,105 @@
   <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
       <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="stylesheet" href="css/album.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<div class="container">
-    <a class="navbar-brand" href="./index.html">Impfchecker</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Teste deinen Impfschutz <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Über die Seite</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-  </nav>
-
-  <div class="container">
-    <div class="row">
-      <h1>Teste deinen Impfschutz</h1>
-    </div>
-    <div class="row">
-      <p><span class="fa fa-info"></span>
-        Hier kannst du deinen Impfschutz überprüfen. Der Test folgt den Impfempfehlungen der STIKO aus dem Jahr 2017. Der Test vereinfacht die Empfehlungen und kann deshalb Fehler enthalten.
-      </p>
-    </div>
-    <div class="row">
-      <h3>Allgemeine Angaben</h3>
-      <div class="btn-group" role="group">
-        <a role="button" class="btn btn-primary" href="tel:+17698765463783"><i class="fa fa-phone"></i> Call</a>
-        <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
-        <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope"></i> Email</a>
-      </div>
-    </div>
-
-    <div class="row">
-      <h3>Röteln</h3>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-      <form>
-        <div class="form-group row">
-          <label for="firstname" class="col-md-2 col-form-label">Vorname</label>
-          <div class="col-md-10">
-            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Vorname" />
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="lastname" class="col-md-2 col-form-label">Nachname</label>
-          <div class="col-md-10">
-            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nachname" />
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="telefonnumber" class="col-md-2 col-form-label">Telefon</label>
-          <div class="col-5 col-sm-4 vol-md-3 ">
-            <div class="input-group">
-              <div class="input-group-addon">(</div>
-<input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Vorwahl" />
-              <div class="input-group-addon">)</div>
-
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 py-4">
+              <h4 class="text-white">Bin ich ausreichend geimpft?</h4>
+              <p class="text-muted">Beantworte diese Fragen und finde heraus, ob du ausreichend geimpft bist. Der Fragebogen orientiert sich an den Empfehlungen der STIKO von 2017. Vorsicht: An vielen Stellen vereinfacht.</p>
+            </div>
+            <div class="col-sm-4 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-7 col-sm-6 vol-md-7 ">
-            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Telefon" />
-
-          </div>
         </div>
-          <div class="form-group row">
-            <label for="emailid" class="col-md-2 col-form-label">Email</label>
-            <div class="col-md-10">
-              <input type="email" class="form-control" id="emailid" name="emailid" placeholder="E-Mail" />
+      </div>
+      <div class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand">Album</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Album example</h1>
+          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <p>
+            <a href="#" class="btn btn-primary">Main call to action</a>
+            <a href="#" class="btn btn-secondary">Secondary action</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album text-muted">
+        <div class="container">
+
+          <div class="row">
+            <div class="card">
+              <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
+            <div class="card">
+              <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+              <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+
+            <div class="card">
+              <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+              <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+              <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+
+            <div class="card">
+              <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+              <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+              <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
         </div>
-      </form>
-
-
-
       </div>
-      <div class="col-sm-4">
-        <div class="form-group row">
-          <div class="form-check col-md-6 offset-md-2">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" name="approve" value="" />
-              <strong> May we contact you?</strong>
-             </label>
-          </div>
-          <div class="col-md-3 offset-md-1">
-            <select class="form-control">
-            <option>Tel.</option>
-            <option>Email.</option>
 
-          </select>
-          </div>
+      <footer class="text-muted">
+        <div class="container">
+          <p class="float-right">
+            <a href="#">Back to top</a>
+          </p>
+          <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+          <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
         </div>
-        <p>Ich arbeite mit Kindern</p>
-        <div class="form-group row">
-          <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-          <div class="col-md-10">
-            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
-          </div>
-      </div>
-      <div class="form-group row">
-        <div class="offset-md-2 col-md-10">
-          <button type="submit" class="btn btn-primary">Send Feedback</button>
-        </div>
-      </div>
-      </div>
-      <div class="col-sm-4">
-        <p><i class="fa fa-ban fa-lg" style="color:red; font-size:550%;text-shadow:5px 5px 2px #cfcfcf"></i></p>
-      </div>
-    </div>
-
-
-<div class="row row-content">
-  <div class="col-12 col-sm-6">
-    <h2>Facts and Figures</h2>
-    <div class="table-responsive">
-    <table class="table table-striped">
-      <thead class="thead-inverse">
-        <tr>
-          <th>Test1</th>
-          <th>2</th>
-          <th>thats</th>
-          <th>input</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <th>Test1</th>
-        <th>2</th>
-        <th>thats</th>
-        <th>input</th>
-      </tr>
-      </tbody>
-    </table>
-    </div>
-
-  </div>
-  <div class="col-12 col-sm-6">
-      <div class="card">
-          <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
-          <div class="card-block">
-              <dl class="row">
-                  <dt class="col-6">Started</dt>
-                  <dd class="col-6">3 Feb. 2013</dd>
-                  <dt class="col-6">Major Stake Holder</dt>
-                  <dd class="col-6">HK Fine Foods Inc.</dd>
-                  <dt class="col-6">Last Year's Turnover</dt>
-                  <dd class="col-6">$1,250,375</dd>
-                  <dt class="col-6">Employees</dt>
-                  <dd class="col-6">40</dd>
-             </dl>
-          </div>
-      </div>
-  </div>
-
-
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <h3 class="card-header bg-primary text-white">Facts at a glance</h3>
-      <div class="card-block">
-        <dl class="row">
-          <dt class="col-6">Started</dt>
-          <dd class="col-6">3. Feb 2017</dd>
-          <dd class="col-6">5. Feb 2017</dd>
-        </dl>
-      </div>
-    </div>
-  </div>
-</div>"
-
-  </div>
-
-<footer class="footer">
-  <div class="container">
-<div class="row">
-<a class="btn btn-social-icon btn-google-pls"><i class="fa fa-google-plus"></i></a>
-<a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
-<a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-<a class="btn btn-social-icon btn-youtbe"><i class="fa fa-youtube"></i></a>
-><i class="fa fa-envelope-o"></i>
-</div>
-  </div>
-
-</footer>
-
-
-<div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
