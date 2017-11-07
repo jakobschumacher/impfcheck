@@ -11,7 +11,9 @@
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "clean": "rimraf dist",
-    "copyfonts": "copyfiles -f nodes_modules/font-awesome/fonts/* dist/fonts"
+    "copyfonts": "copyfiles -f nodes_modules/font-awesome/fonts/* dist/fonts",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run copyfonts && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -21,15 +23,22 @@
     "vaccination selfcheck"
   ],
   "author": "Jakob Schumacher",
-  "license": "MIT-license",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jakobschumacher/impfcheck/issues"
   },
   "homepage": "https://github.com/jakobschumacher/impfcheck#readme",
   "devDependencies": {
+    "cssmin": "^0.4.3",
     "font-awesome": "^4.7.0",
+    "htmlmin": "0.0.7",
     "lite-server": "^2.3.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "usemin-cli": "^0.5.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.6"
+  }
 }
